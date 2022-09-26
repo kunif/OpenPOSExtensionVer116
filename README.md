@@ -11,7 +11,7 @@ This is an extended DLL that supports interfaces and definitions to add addition
 
 To develop and run this program, service object, or application, you need:
 
-- Visual Studio 2022 or Visual Studio Community 2022  version 17.1.0 (development only)  
+- Visual Studio 2022 or Visual Studio Community 2022  version 17.3.4 (development only)  
 - .NET framework 4.8  
 - Microsoft Point of Service for .NET v1.14.1 (POS for.NET) : https://www.microsoft.com/en-us/download/details.aspx?id=55758  
 

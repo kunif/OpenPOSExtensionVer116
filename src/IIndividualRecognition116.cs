@@ -26,7 +26,7 @@ namespace OpenPOS.Extension
 {
     using System;
     using System.Collections.Generic;
-    public struct IndiVidualIdName
+    public struct IndividualIdName
     {
         private string _id;
         private string _name;
@@ -38,7 +38,7 @@ namespace OpenPOS.Extension
         {
             get { return this._name; }
         }
-        public IndiVidualIdName(string Id, string Name)
+        public IndividualIdName(string Id, string Name)
         {
             if (string.IsNullOrWhiteSpace(Id))
             {
@@ -47,7 +47,7 @@ namespace OpenPOS.Extension
             this._id = Id;
             this._name = Name;
         }
-        public bool Equals(IndiVidualIdName joint)
+        public bool Equals(IndividualIdName joint)
         {
             if ((joint.Id == this._id) && (joint.Name == this._name))
             {
@@ -57,21 +57,21 @@ namespace OpenPOS.Extension
         }
         public override bool Equals(object obj)
         {
-            if (obj is IndiVidualIdName)
+            if (obj is IndividualIdName)
             {
-                return this.Equals((IndiVidualIdName)obj);
+                return this.Equals((IndividualIdName)obj);
             }
             return false;
         }
-        public static bool Equals(IndiVidualIdName a, IndiVidualIdName b)
+        public static bool Equals(IndividualIdName a, IndividualIdName b)
         {
             return a.Equals(b);
         }
-        public static bool operator ==(IndiVidualIdName a, object b)
+        public static bool operator ==(IndividualIdName a, object b)
         {
             return a.Equals(b);
         }
-        public static bool operator !=(IndiVidualIdName a, object b)
+        public static bool operator !=(IndividualIdName a, object b)
         {
             return !a.Equals(b);
         }
@@ -83,7 +83,7 @@ namespace OpenPOS.Extension
 
     public interface IIndividualRecognition116
     {
-        IndiVidualIdName[] CapIndividualList { get; }
+        IndividualIdName[] CapIndividualList { get; }
         string[] IndividualIDs { get; }
         string IndividualRecognitionFilter { get; set; }
         string IndividualRecognitionInformation { get; }
