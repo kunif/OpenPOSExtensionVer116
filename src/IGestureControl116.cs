@@ -214,7 +214,7 @@ namespace OpenPOS.Extension
         string[] MotionList { get; }
         bool PoseCreationMode { get; set; }
         string[] PoseList { get; }
-        StorageType Storage { get; }
+        StorageType Storage { get; set; }
         void CreateMotion(string fileName, string[] poseList);
         void CreatePose(string fileName, int time);
         int GetPosition(string jointId);
